@@ -1,0 +1,98 @@
+*{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.3em;
+    font-weight: 900;
+    color: white;
+}
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 17%, rgba(0,212,255,1) 85%);
+    height: 3000px;
+}
+
+.main-container{
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(132, 0, 255, 0.356);
+}
+
+/* ABSOLUTE DEMONSTRATION */
+/* Depinde de cel mai apropiat parinte cu position absolute */
+
+.box01{
+    background-color: rgb(226, 43, 180);
+    height: 800px;
+    width: 800px;
+}
+
+.box02{
+    position: absolute;
+    background-color: blueviolet;
+    height: 600px;
+    width: 600px;
+}
+
+.box03{
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgb(97, 12, 146);
+    height: 400px;
+    width: 400px;
+}
+
+.box04{
+    right: 0;
+    top: 0;
+    position: absolute;
+    
+    background-color: rgb(63, 9, 107);
+    height: 200px;
+    width: 200px;
+}
+
+/* RELATIVE DEMONSTRATION */
+/* Depinde de punctul de origine */
+.box11{
+    background-color: rgb(226, 43, 180);
+    height: 800px;
+    width: 800px;
+}
+
+.box12{
+    position: absolute;
+    background-color: blueviolet;
+    height: 600px;
+    width: 600px;
+}
+
+.box13{
+    position: relative;
+    top: -30px;
+    right: -80px;
+    background-color: rgb(97, 12, 146);
+    height: 400px;
+    width: 400px;
+}
+
+.box14{
+    position: relative;
+    top: 70px;
+    right: 80px;
+    
+    background-color: rgb(63, 9, 107);
+    height: 200px;
+    width: 200px;
+}
